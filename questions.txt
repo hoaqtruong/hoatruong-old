@@ -1,0 +1,3 @@
+QUESTIONS
+1. Edit Gemfile: ... gem 'autotest', '[v.000]' then run  install --> what cmd bundle install is for and how bundle install uses the Gemfile?
+2. I wrote the test to fail (RED): insert 'render_views' into spec/controllers/pages_controller_spec.rb

@@ -1,0 +1,35 @@
+CHAPTER 3
+rails new sample_app -T
+[edit] mate Gemfile 
+bundle install
+rails generate rspec:intall
+git init
+git add .
+git commit -m "Initial commit"
+git mv README README.markdown
+git commit -a -m "Improved the README"
+git remote add origin git@github.com:<username>/sample_app.git
+git push origin master
+heroku create
+git push heroku master
+git push
+git push heroku
+http://localhost:3000/
+git checkout -b state-pages
+rails generate controller Pages home contact
+[sudo] gem install autotest
+mate ~/.autotest
+git rm -r spec/views
+git rm -r spec/helpers
+gem uninstall rspec rspec rspec-rails
+rvm gemset delete rails3tutorial
+rvm --create use 1.9.2@rails3tutorial $ rvm --default 1.9.2@rails3tutorial
+gem install rails -v 3.0.1
+bundle install
+autotest
+spork --bootstrap
+
+inserted 'ActiveSupport::Dependencies.clear' in spec/spec_helpers.rb
+Control-C to quit spork and retart it $ spork
+time rspec spec/
+$ git merge [branchname]
