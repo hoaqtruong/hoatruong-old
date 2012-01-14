@@ -13,12 +13,12 @@ describe "LayoutLinks" do
   
   it "should have a Contact page at '/contact' " do
     get '/contact'
-    response.should have_selector('title', :content => @base_title + " | Contact Me")
+    response.should have_selector('title', :content => @base_title + " | Contact")
   end
   
   it "should have an About page at '/about' " do
     get '/about'
-    response.should have_selector('title', :content => @base_title + " | About Me")
+    response.should have_selector('title', :content => @base_title + " | About")
   end
   
   it "should have a Help page at '/help' " do
@@ -28,7 +28,7 @@ describe "LayoutLinks" do
   
   it "should have a Sign up page at '/signup' " do
     get '/signup'
-    response.should have_selector('title', :content => "Sign up myJourney!")
+    response.should have_selector('title', :content => "Sign up")
   end
   
   it "should have the right links on the layout" do
@@ -36,15 +36,13 @@ describe "LayoutLinks" do
     click_link "Home"
     response.should have_selector('title', :content => "Home")
     click_link "About"
-    response.should have_selector('title', :content => "About Me")
+    response.should have_selector('title', :content => "About")
     click_link "Contact"
-    response.should have_selector('title', :content => "Contact Me")
+    response.should have_selector('title', :content => "Contact")
     click_link "Help"
     response.should have_selector('title', :content => "Help")
-
-
-    click_link "Sign up myJourney!"
-    response.should have_selector('title', :content => "Sign up myJourney!")
+    click_link "Sign up"
+    response.should have_selector('title', :content => "Sign up")
   end
      
 end
