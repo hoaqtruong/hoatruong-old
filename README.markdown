@@ -1,4 +1,4 @@
-#Ruby on Rails Tutorial: sample application (sample_app)
+#myJourney
 
 == Welcome to Rails
 

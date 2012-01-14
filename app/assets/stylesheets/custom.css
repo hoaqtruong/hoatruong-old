@@ -1,45 +1,45 @@
 .container {
-	width: 710px;
+	width: 1000px;
 }
 
 body {
-	background: #cff;
+	background: black;
+	color: #696969;
 }
 
 header {
-	padding-top: 20px;
+	padding-top: 0.6em;
 }
 
 header img {
-	padding: 1em;
-	background: #fff;
+	padding: 0em;
+	background: black;
 }
 
 section {
-	margin-top: 1em;
-	font-size: 120%;
-	padding: 20px;
-	background: #fff;
+	margin-top: 0em;
+	font-size: 100%;
+	padding: 0px;
+	background: black;
+
 }
 
 section h1 {
-	font-size: 200%;
+	font-size: 140%;
+	color: #B8860B;
 }
 
 /* Links */
 
 a {
-	color: #09c;
 	text-decoration: none;
 }
 
 h:hover {
-	color: #069;
 	text-decoration: underline;
 }
 
 a:visited {
-	color: #069;
 }
 
 /* Navigation */
@@ -48,10 +48,24 @@ nav {
 	float: right;
 }
 
+
 nav {
-	background-color: white;
+	background-color: black;
 	padding: 0 0.7em;
+	border-width: 2px;
+	border-color: #696969;
 	white-space: nowrap;
+}
+
+nav#top {
+	border-top-style:solid;
+	position: relative;
+	top:-55px;
+	left: -55px;
+}
+
+nav#bottom {
+	border-bottom-style:solid;
 }
 
 nav ul {
@@ -68,15 +82,20 @@ nav ul li {
 nav ul li a {
 	padding: 0 5px;
 	font-weight: bold;
+	color: #708090;
 }
-
 nav ul li a:visited {
-	color: #09c;
 }
-
 nav ul li a:hover {
 	text-decoration: underline;
+	color: #708090;
 }
+nav ul li a:active {
+color: white;
+}
+
+
+
 
 /* Sign up button*/
 a.signup_button { 
@@ -85,7 +104,6 @@ a.signup_button {
 	display: block; 
 	text-align: center; 
 	width: 190px; 
-	color: #fff; 
 	background: #006400; 
 	font-size: 150%; 
 	font-weight: bold; 
@@ -94,9 +112,9 @@ a.signup_button {
 
 /* Round corners */
 .round {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
 }
 
 /* FOOTER */
